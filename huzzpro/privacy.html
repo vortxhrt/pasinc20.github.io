@@ -32,13 +32,13 @@ ul{padding-left:1.25rem}
     <a href="/huzzpro.html">Home</a>
     <a href="/huzzpro/terms.html">Terms</a>
     <a href="/huzzpro/privacy.html">Privacy</a>
-    <a href="/huzzpro/support.html">Support</a>
+    <a href="/contact.html">Support</a>
   </div>
 </nav>
 
 <main class="container">
   <h1>Privacy Policy</h1>
-  <p><em>Last updated: 16&nbsp;August&nbsp;2025</em></p>
+  <p><em>Last updated: 24 August 2026</em></p>
 
   <div class="card">
     <h2>1) Who we are</h2>
@@ -46,7 +46,7 @@ ul{padding-left:1.25rem}
 
     <h2>2) What we collect</h2>
     <ul>
-      <li><strong>Content you provide</strong> — text you type/paste, and images/screenshots you attach or capture with the camera for analysis.</li>
+      <li><strong>Content you provide</strong> — text you type or paste into the app, screenshots you select from your photo library, dating profile images you upload, photos you capture with the camera, and the context of any analysis report you ask us to discuss. This is collected only when you actively type, attach, or capture it.</li>
       <li><strong>Purchase data</strong> — product identifier (<code>premium_weekly_599</code>), transaction IDs, subscription status (via Apple StoreKit). We never receive card numbers.</li>
       <li><strong>App usage</strong> — basic interaction events (e.g., free-usage counters kept locally with <code>UserDefaults</code>), feature toggles, and non-identifying diagnostics if the OS provides them.</li>
       <li><strong>Device data</strong> — device model, OS version, language, timezone, app version.</li>
@@ -62,7 +62,10 @@ ul{padding-left:1.25rem}
 
     <h2>4) AI &amp; third parties</h2>
     <ul>
-      <li><strong>AI processing</strong>: We route requests through our gateway (e.g., Cloudflare Workers) to an AI model provider (e.g., Google Gemini) to create responses. Content is processed for the sole purpose of generating your result.</li>
+      <li><strong>AI processing</strong>: When you request AI analysis, the content described above is transmitted over TLS to our gateway hosted on <strong>Cloudflare Workers (Cloudflare, Inc.)</strong>, which forwards it to <strong>Google Gemini, operated by Google LLC</strong>, our AI model provider. These are the only third parties that receive your content. Content is processed for the sole purpose of generating your result.</li>
+      <li><strong>What is sent</strong>: only the material you supply for that request — text you type or paste, screenshots you select, dating profile images, photos you capture with the camera, and the report context where relevant. We do not send your contacts, location, device identifiers, or your saved conversation history.</li>
+      <li><strong>Your permission</strong>: before any of this is transmitted, Huzz Pro shows an in-app <em>AI Data Sharing</em> screen naming what will be sent and who receives it. Nothing is sent unless you tap <em>Agree and Continue</em>. If you decline, no request is made.</li>
+      <li><strong>Processor safeguards</strong>: We require Cloudflare and Google to protect this content under contractual data-processing terms that provide privacy safeguards at least equivalent to those described in this policy. Under the Gemini API terms applicable to our service, Google does not use prompts or responses to improve its products, but may log them for a limited period for abuse prevention and legal or regulatory obligations. We do not configure Cloudflare Workers to store request content.</li>
       <li><strong>Apple</strong>: In-App Purchases, subscription status, and receipts are handled by Apple (StoreKit / App Store).</li>
       <li><strong>No ads, no sale</strong>: We do not sell your personal data or use third-party ad tracking SDKs.</li>
     </ul>
@@ -72,7 +75,8 @@ ul{padding-left:1.25rem}
 
     <h2>6) Data retention</h2>
     <ul>
-      <li><strong>Content</strong>: kept only as long as necessary to fulfill your request and maintain service reliability; not used for advertising.</li>
+      <li><strong>AI request content</strong>: processed to return your result. Our gateway is not configured to store it. Google may keep limited logs for safety, abuse prevention, and legal or regulatory obligations as described above. It is not used for advertising or to improve Google's products.</li>
+      <li><strong>Saved conversations</strong>: stored only on your device. They are never uploaded to us, and are removed when you delete them or delete the app.</li>
       <li><strong>Purchases</strong>: retained as required for accounting/compliance.</li>
       <li><strong>Diagnostics</strong>: typically up to 24 months if collected.</li>
       <li><strong>Backups</strong>: limited-duration backups may persist for ≤30 days.</li>
@@ -95,7 +99,7 @@ ul{padding-left:1.25rem}
     <p>Processing may occur in the US or other countries where our providers operate. Where required, we use Standard Contractual Clauses or equivalent safeguards.</p>
 
     <h2>11) Subscriptions &amp; billing summary</h2>
-    <p>Huzz Pro offers a 3-day free trial, then <strong>$5.99/week</strong>, auto-renewing until cancelled. Payment is charged to your Apple ID; manage or cancel anytime in <em>Settings ▸ Apple ID ▸ Subscriptions</em>. See the <a href="/huzzpro/terms.html">Terms</a> for full details.</p>
+    <p>Huzz Pro offers a 3-day free trial, then <strong>$2.99/week</strong>, auto-renewing until cancelled. Payment is charged to your Apple ID; manage or cancel anytime in <em>Settings ▸ Apple ID ▸ Subscriptions</em>. See the <a href="/huzzpro/terms.html">Terms</a> for full details.</p>
 
     <h2>12) Contact</h2>
     <p>Email privacy requests to <a href="mailto:privacy@subsly.ai">privacy@subsly.ai</a> or support at <a href="mailto:support@subsly.ai">support@subsly.ai</a>.</p>
