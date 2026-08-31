@@ -6,6 +6,7 @@
 <title>ShutIt – A little sound before your Mac goes quiet</title>
 <meta name="description" content="ShutIt plays a sound the moment you close your MacBook lid. The same clamshell signal on every Mac — 2011 to today.">
 <meta name="theme-color" content="#0f0f15">
+<link rel="icon" href="/shutit.png">
 <style>
 :root{
   --bg:#0f0f15; --fg:#ffffff;
@@ -29,7 +30,7 @@ img,svg{max-width:100%;display:block}
   display:flex;align-items:center;justify-content:space-between;
   padding:0 1.25rem;z-index:200;border-bottom:1px solid #1e1e28;
 }
-.logo{height:36px;width:36px}
+.logo{height:38px;width:38px;border-radius:9px;object-fit:cover}
 
 .nav-links{display:none;gap:1.75rem}
 .nav-links a{color:var(--fg);text-decoration:none;font-size:.95rem;opacity:.88;transition:.25s}
@@ -75,7 +76,7 @@ h1 span{color:var(--accent2)}
 .hero-desc{font-size:1.125rem;line-height:1.6;opacity:.88;margin-top:.8rem}
 .hero-actions{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;margin-top:1.5rem}
 .hero-note{margin-top:1rem;font-size:.85rem;opacity:.6}
-.hero-top-logo{height:96px;width:96px;margin:0 auto 2rem;filter:drop-shadow(0 15px 40px rgba(58,31,255,.45))}
+.hero-top-logo{height:104px;width:104px;margin:0 auto 2rem;border-radius:23px;object-fit:cover;filter:drop-shadow(0 15px 40px rgba(58,31,255,.45))}
 
 .features{padding:var(--gap) 0}
 .features-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:2rem}
@@ -109,43 +110,33 @@ footer a{color:inherit}
 <body>
 
 <nav class="top-nav" role="navigation">
-  <a href="/" aria-label="ShutIt home">
-    <svg class="logo" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ShutIt logo">
-      <defs><linearGradient id="sgNav" gradientUnits="userSpaceOnUse" x1="18" y1="46" x2="48" y2="18"><stop offset="0" stop-color="#7a5bff"/><stop offset="1" stop-color="#33c0ff"/></linearGradient></defs>
-      <rect x="1" y="1" width="62" height="62" rx="15" fill="#0e0e1c" stroke="rgba(255,255,255,.10)"/>
-      <g fill="none" stroke="url(#sgNav)" stroke-width="4.5" stroke-linecap="round"><path d="M20 40V26"/><path d="M29 45V21"/><path d="M38 47V19"/><path d="M47 41V25"/></g>
-    </svg>
-  </a>
+  <a href="/shutit.html" aria-label="ShutIt home"><img src="/shutit.png" class="logo" alt="ShutIt logo"></a>
   <div class="nav-links">
-    <a href="index.html">All apps</a>
-    <a href="terms.html">Terms &amp; Conditions</a>
-    <a href="privacy.html">Privacy Policy</a>
-    <a href="contact.html">Contact Us</a>
+    <a href="/index.html">All apps</a>
+    <a href="/shutit/terms.html">Terms</a>
+    <a href="/shutit/privacy.html">Privacy</a>
+    <a href="/shutit/support.html">Support</a>
   </div>
   <button class="burger" aria-label="menu" aria-expanded="false"><span></span><span></span><span></span></button>
 </nav>
 
 <div class="nav-drawer" id="drawer">
-  <a href="index.html">All apps</a>
-  <a href="terms.html">Terms &amp; Conditions</a>
-  <a href="privacy.html">Privacy Policy</a>
-  <a href="contact.html">Contact Us</a>
+  <a href="/index.html">All apps</a>
+  <a href="/shutit/terms.html">Terms</a>
+  <a href="/shutit/privacy.html">Privacy</a>
+  <a href="/shutit/support.html">Support</a>
 </div>
 
 <header>
   <div class="container hero-inner">
     <div class="hero-copy">
-      <svg class="hero-top-logo" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ShutIt logo">
-        <defs><linearGradient id="sgHero" gradientUnits="userSpaceOnUse" x1="18" y1="46" x2="48" y2="18"><stop offset="0" stop-color="#7a5bff"/><stop offset="1" stop-color="#33c0ff"/></linearGradient></defs>
-        <rect x="1" y="1" width="62" height="62" rx="15" fill="#0e0e1c" stroke="rgba(255,255,255,.10)"/>
-        <g fill="none" stroke="url(#sgHero)" stroke-width="4.5" stroke-linecap="round"><path d="M20 40V26"/><path d="M29 45V21"/><path d="M38 47V19"/><path d="M47 41V25"/></g>
-      </svg>
+      <img src="/shutit.png" class="hero-top-logo" alt="ShutIt logo">
       <p class="tag">For macOS</p>
       <h1>A little sound before your Mac goes <span>quiet</span></h1>
       <p class="hero-desc">ShutIt plays the sound of your choice the instant you close your MacBook lid — a tiny, satisfying goodbye every time your Mac drifts off to sleep.</p>
       <div class="hero-actions">
         <a href="#" class="btn btn--light">Download for Mac</a>
-        <a href="index.html" class="btn btn--ghost">See all apps</a>
+        <a href="/index.html" class="btn btn--ghost">See all apps</a>
       </div>
       <p class="hero-note">Requires macOS 10.15 or later · Intel &amp; Apple Silicon · The same clamshell signal on every Mac.</p>
     </div>
@@ -172,7 +163,7 @@ footer a{color:inherit}
 
 <footer class="container">
   © <span id="year"></span> ShutIt — part of the Subsly family.<br>
-  <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="contact.html">Contact</a>
+  <a href="/shutit/privacy.html">Privacy</a> · <a href="/shutit/terms.html">Terms</a> · <a href="/shutit/support.html">Support</a>
 </footer>
 
 <script>
